@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link />
+    <title>Movies</title>
+</head>
+<body>
+    <h1>Movies App</h1>
+
+    {{#if films}}
+        <div>
+            {{#each films}}
+                <div>
+                    <h3>{{title}}</h3>
+                    <p>Director: {{director}}</p>
+                    <p>Rate: {{rate}}</p>
+                </div>        
+            {{/each}}
+        </div>
+    {{/if}}
+
+    <script src="/script.js"></script>
+
+
+</body>
+</html>
